@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comments - Sylox Holdings Ltd.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Leave a Comment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="comments.html">Comments</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>We value your feedback!</h2>
+      <form action="submit_comment.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="comment">Your Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+
+        <button type="submit">Submit Comment</button>
+      </form>
+
+      <h3>Previous Comments</h3>
+      <div id="comments-list">
+        <!-- Previous comments will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sylox Holdings Ltd.</p>
+  </footer>
+</body>
+</html>
